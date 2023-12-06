@@ -25,11 +25,22 @@ Será possível também acompanhar o status dessa ocorrência no "feed" da aplic
 
 ## 🔜 Pro Futuro
 
+TBD
+
 
 ## 🤝 Quem fez?
 
+- Ananias: [euananias@gmail.com](mailto:euananias@gmail.com)
+- Danilo Ribeiro: [danriba@gmail.com](mailto:danriba@gmail.com)
+- Renêe Rocha: [reneerocha.pi@gmail.com](mailto:reneerocha.pi@gmail.com)
+- João Victor: [joao4920oliveira@gmail.com](mailto:joao4920oliveira@gmail.com)
+- Sérgio Leitão: [sergiomiranda86@gmail.com](mailto:sergiomiranda86@gmail.com)
+
+
 
 ## 🎯 Status
+
+Em prototipação no Figma e iniciaremos em breve a criação do front-end e do back-end.
 
 
 ## © Licença
