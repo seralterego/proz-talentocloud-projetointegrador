@@ -15,28 +15,32 @@ O usuário irá entrar no site, e sem cadastro inicial, poderá tirar uma foto (
 Será possível também acompanhar o status dessa ocorrência no "feed" da aplicação, que irá contar com as informações do registro.
 
 
-## 🎓 Aprendizados
+## 🎓 Aprendizados (até o momento)
+
+- Utilização do Figma para criação do mockup do site.
 
 
 ## 🧰 Tecnologias e Recursos Utilizados
 
-- [Figma](https://www.figma.com/file/6kiSdVqT1Dxs3uPgW2Psur/Landing-Page-Barber?type=design&node-id=0%3A1&mode=design&t=XxnkFp0h2WfED6Iu-1) para apresentação do mockup do projeto
+- [Figma](https://www.figma.com/file/OTuIpGBHu14q9M52hYgQQm/Layout-v1?type=design&node-id=0-1&mode=design&t=vpzZ6QjjDNe9D5zH-0) para apresentação do mockup do projeto
+- HTML5 para estuturção do projeto
+- CSS3 para estilização do projeto
+- JavaScript para intelingência do projeto
+
 
 
 ## 🔜 Pro Futuro
 
-TBD
+- Criação do template em HTML e CSS
 
 
 ## 🤝 Quem fez?
 
-- Ananias: [euananias@gmail.com](mailto:euananias@gmail.com)
-- Danilo Ribeiro: [danriba@gmail.com](mailto:danriba@gmail.com)
-- Renêe Rocha: [reneerocha.pi@gmail.com](mailto:reneerocha.pi@gmail.com)
-- João Victor: [joao4920oliveira@gmail.com](mailto:joao4920oliveira@gmail.com)
-- Sérgio Leitão: [sergiomiranda86@gmail.com](mailto:sergiomiranda86@gmail.com)
-
-
+- Ananias: [GitHub](https://github.com/ananias18)
+- Danilo Ribeiro: [GitHub](https://github.com/dmax101)
+- Renêe Rocha: [GitHub](https://github.com/joaovictorruivo)
+- João Victor: [GitHub](https://github.com/reneerocha)
+- Sérgio Leitão: [GitHub](https://github.com/seralterego)
 
 ## 🎯 Status
 
