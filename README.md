@@ -2,11 +2,12 @@
 
 <!-- fonte para readme stats: https://github.com/anuraghazra/github-readme-stats -->
 <!-- fonte para badges e shieds: https://github.com/iuricode/readme-template/tree/main -->
+##
+<center><img src="./src/img/logo.svg"></center>
 
 ## 📄 Sobre
 
 Site para cadastro de denúncias de cidadãos sobre problemas na região em que reside, com o objetivo de encaminhar às autoridades locais e assim, agilizar o processo de resolução.
-
 
 ## 🛠 Funcionalidades
 
@@ -18,6 +19,7 @@ Será possível também acompanhar o status dessa ocorrência no "feed" da aplic
 ## 🎓 Aprendizados (até o momento)
 
 - Utilização do Figma para criação do mockup do site.
+- Como criar uma página HTML, com melhores práticas e usando tags semânticas da maneira correta.
 
 
 ## 🧰 Tecnologias e Recursos Utilizados
@@ -26,8 +28,6 @@ Será possível também acompanhar o status dessa ocorrência no "feed" da aplic
 - HTML5 para estuturção do projeto
 - CSS3 para estilização do projeto
 - JavaScript para intelingência do projeto
-
-
 
 ## 🔜 Pro Futuro
 
@@ -44,7 +44,8 @@ Será possível também acompanhar o status dessa ocorrência no "feed" da aplic
 
 ## 🎯 Status
 
-Em prototipação no Figma e iniciaremos em breve a criação do front-end e do back-end.
+- Sprint 01: Prototipação no Figma e iniciaremos em breve a criação do front-end e do back-end.
+- Sprint 02: Estruturação do HTML e organização do GitHub
 
 
 ## © Licença
