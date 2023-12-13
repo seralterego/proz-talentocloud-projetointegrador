@@ -67,3 +67,157 @@ Processing by ComplaintsController#index as HTML
 Completed 200 OK in 38ms (Views: 0.8ms | ActiveRecord: 3.4ms | Allocations: 12097)
 
 
+Started GET "/" for 127.0.0.1 at 2023-12-06 13:25:25 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/renee/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/renee/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.1ms | Allocations: 375)
+Completed 200 OK in 66ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 4199)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-06 20:08:00 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/renee/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/renee/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.8ms | Allocations: 375)
+Completed 200 OK in 18ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 4196)
+
+
+Started GET "/complaints" for ::1 at 2023-12-06 20:35:42 -0300
+Processing by ComplaintsController#index as */*
+  [1m[36mComplaint Load (0.5ms)[0m  [1m[34mSELECT "complaints".* FROM "complaints"[0m
+  ↳ app/controllers/complaints_controller.rb:8:in `index'
+Completed 200 OK in 68ms (Views: 2.5ms | ActiveRecord: 8.3ms | Allocations: 8642)
+
+
+Started POST "/complaints" for ::1 at 2023-12-06 20:42:49 -0300
+Processing by ComplaintsController#create as */*
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.0ms | Allocations: 155)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: complaint):
+  
+app/controllers/complaints_controller.rb:49:in `complaint_params'
+app/controllers/complaints_controller.rb:18:in `create'
+Started POST "/complaints" for ::1 at 2023-12-06 20:44:18 -0300
+Processing by ComplaintsController#create as */*
+  Parameters: {"type"=>"reclamação", "longitude"=>"1234", "latitude"=>"654"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 98)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: complaint):
+  
+app/controllers/complaints_controller.rb:49:in `complaint_params'
+app/controllers/complaints_controller.rb:18:in `create'
+Started GET "/complaints" for ::1 at 2023-12-06 20:44:52 -0300
+Processing by ComplaintsController#index as */*
+  [1m[36mComplaint Load (4.8ms)[0m  [1m[34mSELECT "complaints".* FROM "complaints"[0m
+  ↳ app/controllers/complaints_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 1.7ms | ActiveRecord: 6.9ms | Allocations: 853)
+
+
+Started GET "/complaints" for ::1 at 2023-12-06 20:50:10 -0300
+Processing by ComplaintsController#index as */*
+  [1m[36mComplaint Load (3.7ms)[0m  [1m[34mSELECT "complaints".* FROM "complaints"[0m
+  ↳ app/controllers/complaints_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 2.2ms | ActiveRecord: 5.8ms | Allocations: 842)
+
+
+Started POST "/complaints" for ::1 at 2023-12-06 20:50:51 -0300
+Error occurred while parsing request parameters.
+Contents:
+
+{
+    type: "Buraco"
+}
+Processing by ComplaintsController#create as */*
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 119)
+
+
+  
+ActionDispatch::Http::Parameters::ParseError (Error occurred while parsing request parameters):
+  
+app/controllers/complaints_controller.rb:49:in `complaint_params'
+app/controllers/complaints_controller.rb:18:in `create'
+Started GET "/controllers/complaints_controller.rb:18:in" for ::1 at 2023-12-06 20:52:09 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/controllers/complaints_controller.rb:18:in"):
+  
+Started GET "/complaints" for ::1 at 2023-12-06 20:52:16 -0300
+Processing by ComplaintsController#index as */*
+  [1m[36mComplaint Load (0.9ms)[0m  [1m[34mSELECT "complaints".* FROM "complaints"[0m
+  ↳ app/controllers/complaints_controller.rb:8:in `index'
+Completed 200 OK in 23ms (Views: 4.4ms | ActiveRecord: 8.5ms | Allocations: 2400)
+
+
+Started GET "/" for 127.0.0.1 at 2023-12-06 20:53:51 -0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/renee/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/renee/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.5ms | Allocations: 265)
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 872)
+
+
+Started GET "/complaints" for 127.0.0.1 at 2023-12-06 20:59:33 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ComplaintsController#index as HTML
+  [1m[36mComplaint Load (0.4ms)[0m  [1m[34mSELECT "complaints".* FROM "complaints"[0m
+  ↳ app/controllers/complaints_controller.rb:8:in `index'
+Completed 200 OK in 140ms (Views: 3.1ms | ActiveRecord: 6.7ms | Allocations: 10882)
+
+
+Started POST "/complaints" for ::1 at 2023-12-06 21:01:29 -0300
+Processing by ComplaintsController#create as */*
+  Parameters: {"type"=>"Buraco", "complaint"=>{"type"=>"Buraco"}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 1.3ms | Allocations: 271)
+
+
+  
+ActiveRecord::SubclassNotFound (The single-table inheritance mechanism failed to locate the subclass: 'Buraco'. This error is raised because the column 'type' is reserved for storing the class in case of inheritance. Please rename this column if you didn't intend it to be used for storing the inheritance class or overwrite Complaint.inheritance_column to use another column for that information.):
+  
+app/controllers/complaints_controller.rb:18:in `create'
+Started POST "/complaints" for ::1 at 2023-12-06 21:05:26 -0300
+Error occurred while parsing request parameters.
+Contents:
+
+{
+    "type":"Buraco"
+    "longitude":"1234"
+    "latitude":"654321"
+}
+Processing by ComplaintsController#create as */*
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.0ms | Allocations: 122)
+
+
+  
+ActionDispatch::Http::Parameters::ParseError (Error occurred while parsing request parameters):
+  
+app/controllers/complaints_controller.rb:49:in `complaint_params'
+app/controllers/complaints_controller.rb:18:in `create'
+Started GET "/" for 127.0.0.1 at 2023-12-06 21:29:08 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/renee/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/renee/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.0ms | Allocations: 375)
+Completed 200 OK in 54ms (Views: 21.2ms | ActiveRecord: 0.0ms | Allocations: 4196)
+
+
+Started POST "/complaints" for ::1 at 2023-12-06 21:29:15 -0300
+Error occurred while parsing request parameters.
+Contents:
+
+{
+    "type":"Buraco"
+    "longitude":"1234"
+    "latitude":"654321"
+}
+Processing by ComplaintsController#create as */*
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 245)
+
+
+  
+ActionDispatch::Http::Parameters::ParseError (Error occurred while parsing request parameters):
+  
+app/controllers/complaints_controller.rb:49:in `complaint_params'
+app/controllers/complaints_controller.rb:18:in `create'
