@@ -69,21 +69,8 @@ main section.hero div.btn_faca_sua_denuncia {
   border-radius: 24px;
   font-weight: 900;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 8px;
-}
-
-main section.hero div.btn_faca_sua_denuncia:hover {
-  background-color: #9c100e;
-  color: #fff;
-}
-
-main section.hero div.btn_faca_sua_denuncia span.txt_faca_sua_denuncia {
-  font-size: 44px;
-}
-
-main section.hero div.btn_faca_sua_denuncia span.txt_exclamation {
-  font-size: 120px;
 }
 
 /* Footer */
