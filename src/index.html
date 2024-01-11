@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Buraqueira | Faça sua denúncia e ajude sua cidade!</title>
+	<link rel="stylesheet" href="main.css">
 </head>
 
 <body>
@@ -13,7 +14,7 @@
 		</a>
 		<nav>
 			<ul>
-				<li><a href="#">Home</a></li>
+				<li class="active"><a href="#">Home</a></li>
 				<li><a href="pages/sobre.html">Sobre</a></li>
 				<li><a href="pages/mural.html">Mural</a></li>
 				<li><a href="pages/mapas.html">Mapas</a></li>
@@ -22,13 +23,15 @@
 		</nav>
 	</header>
 	<main>
-		<img src="./img/bg-hero-home.png" alt="Imagem de um buraco como destaque de fundo da página principal">
-		<a href="pages/denuncia.html">
-			<h1>Faça sua Denúncia!</h1>
-		</a>
+		<section class="hero">
+			<a class="cta-denuncia" href="pages/denuncia.html">
+				<img class="cta-icon" src="./img/icon-bullhorn.svg" alt="">
+				<h1 class="cta-text">Faça sua Denúncia</h1>
+			</a>
+		</section>
 	</main>
 	<footer>
-		<!-- OBS: ícones brancos...mudar o bg do footer no Inspector no navegador para preto para apresentar -->
+		<!-- OBS: ícones brancos...mudar o bg do footer no Inspector no navegador para preto para apresentar >
 		<img src="img/logo-rodape.svg" alt="Logo da página na cor branca">
 		<ul>
 			<li>
