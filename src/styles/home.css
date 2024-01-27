@@ -1,11 +1,4 @@
-@import "../base.css";
-
 /* Hero */
-main {
-  width: 100vw;
-  height: 720px;
-}
-
 section.hero {
   width: 100%;
   height: 100%;

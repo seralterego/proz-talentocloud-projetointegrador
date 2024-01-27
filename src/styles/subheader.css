@@ -1,0 +1,37 @@
+.subheader {
+  width: 100%;
+  background-color: var(--secondary-bg-color);
+}
+
+.contain {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 88px;
+  max-width: 997px;
+  margin: 0 auto;
+}
+
+button {
+  width: 234px;
+  height: 56px;
+  background-color: var(--btn-bg-color);
+  border-radius: 8px;
+}
+button.active {
+  border: 2px solid var(--primary-text-color);
+}
+
+button > a {
+  color: var(--primary-text-color);
+  text-align: center;
+  text-transform: lowercase;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: normal;
+}
+
+button.active > a {
+  text-decoration: underline;
+}
