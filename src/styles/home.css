@@ -1,0 +1,61 @@
+/* Hero */
+section.hero {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/bg-hero-home.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section a.cta-denuncia {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 540px;
+  border: 1px solid #F55853;
+  border-radius: 8px;
+  height: 271px;
+  background-color: #F55853;
+  padding-left: 25px;
+}
+
+.cta-icon {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  top: -30%;
+}
+
+section a.cta-denuncia h1.cta-text {
+  color: #9c100e;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: space-between;
+  font-size: 44px;
+  width: 234px;
+  height: 109px;
+  text-align: left;
+  text-transform: lowercase;
+  line-height: 1.2;
+  position: relative;
+  left: -10%;
+}
+section a.cta-denuncia h1.cta-text::after {
+  content: "!";
+  text-align: center;
+  font-family: inherit;
+  font-size: 106px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
