@@ -1,0 +1,17 @@
+section.page-link {
+  max-width: 997px;
+  margin: 0 auto;
+  height: auto;
+}
+
+section.page-link .pre-content {
+  margin-bottom: 4rem;
+}
+
+section.page-link .pre-content p {
+  font-size: 16px;
+}
+
+section.page-link .pre-content p strong {
+  font-size: 10px;
+}
