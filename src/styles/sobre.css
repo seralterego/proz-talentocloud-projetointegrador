@@ -1,1 +1,36 @@
+.page-sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+  }
+  
+  .page-sobre > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+    height: 374px;
+    
+  }
+  .page-sobre > div > div {
+    flex: 1;
+    max-width: 50%;
+    
+  }
+  
+  .imagem-sobre {
+    text-align: right;
+    
+  }
+  
+  .imagem-sobre-ultima {
+    text-align: center;
+    margin-top: 100px;
+    
+  }
+  
+  main{
+    padding-bottom: 100px;
+  }
+  
