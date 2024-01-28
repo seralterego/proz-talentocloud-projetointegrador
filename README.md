@@ -36,11 +36,12 @@ Será possível também acompanhar o status dessa ocorrência no "feed" da aplic
 
 ## 🤝 Quem fez?
 
-- Ananias: [GitHub](https://github.com/ananias18)
-- Danilo Ribeiro: [GitHub](https://github.com/dmax101)
-- Renêe Rocha: [GitHub](https://github.com/joaovictorruivo)
-- João Victor: [GitHub](https://github.com/reneerocha)
-- Sérgio Leitão: [GitHub](https://github.com/seralterego)
+- Ananias: [GitHub](https://github.com/ananias18) <!-- ananias -->
+- Danilo Ribeiro: [GitHub](https://github.com/dmax101) <!-- danilo -->
+- Renêe Rocha: [GitHub](https://github.com/joaovictorruivo) <!-- renee -->
+- João Victor: [GitHub](https://github.com/reneerocha) <!-- joaovictor -->
+- Sérgio Leitão: [GitHub](https://github.com/seralterego) <!-- sergio -->
+<!-- Marcando aqui a branch backend pra facilitar minha vida...kkk -->
 
 ## 🎯 Status
 
