@@ -41,6 +41,7 @@ Será possível também acompanhar o status dessa ocorrência no "feed" da aplic
 - Renêe Rocha: [GitHub](https://github.com/joaovictorruivo) <!-- renee -->
 - João Victor: [GitHub](https://github.com/reneerocha) <!-- joaovictor -->
 - Sérgio Leitão: [GitHub](https://github.com/seralterego) <!-- sergio -->
+<!-- Marcando aqui a branch backend pra facilitar minha vida...kkk -->
 
 ## 🎯 Status
 
