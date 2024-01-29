@@ -63,9 +63,20 @@ footer .page-credits .page-credits-02 .page-credits-submenu ul li > a, footer .p
   text-transform: lowercase;
 }
 
-/*footer span.logo {
-  font-family: "Oleo Script";
-  font-size: 24pt;
-  color: #fff;
-  padding-left: 24px;
-} */
+@media screen and (max-width: 590px) {
+  footer .page-credits {
+    flex-flow: column wrap;
+  }
+  footer .page-credits .page-credits-02 {
+    width: 100%;
+    gap: 0;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  footer .page-credits .page-credits-02 {
+    flex-flow: column wrap;
+    gap: 20px;
+  }
+}
