@@ -17,6 +17,7 @@ button {
   height: 56px;
   background-color: var(--btn-bg-color);
   border-radius: 8px;
+  border-style: none;
 }
 button.active {
   border: 2px solid var(--primary-text-color);
@@ -34,4 +35,16 @@ button > a {
 
 button.active > a {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 1020px) {
+  .contain {
+    margin: 0 40px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .contain {
+    justify-content:center;
+  }
 }
