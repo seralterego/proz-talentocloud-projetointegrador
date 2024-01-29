@@ -14,38 +14,55 @@
       <img src="../img/logo.svg" alt="Logo da página" />
     </a>
     <nav>
+      <input type="checkbox" id="checkbox" class="checkbox">
+      <label for="checkbox" class="label-menu">
+        Menu
+        <span class="hamburger"></span>
+      </label>
       <ul>
         <li><a href="../index.html">Home</a></li>
         <li><a href="../pages/sobre.html">Sobre</a></li>
-        <li><a href="../pages/mural.html">Mural</a></li>
+        <li class="active"><a href="#">Mural</a></li>
         <li><a href="../pages/mapas.html">Mapas</a></li>
         <li><a href="../pages/links.html">Links</a></li>
       </ul>
     </nav>
   </header>
   <!-- CTA Faça Sua Denúncia -->
-  <div class="subheader">
+  <!-- <div class="subheader">
     <div class="contain">
       <button disabled="disabled" class="active">
         <a href="">Faça sua denúncia</a>
       </button>
     </div>
-  </div>
+  </div> -->
   <!-- Conteúdo principal -->
   <main>
+    <!-- Título de páginas -->
+    <div class="page-title">
+      <h1>Denuncie</h1>
+    </div>
     <!-- Conteúdo principal da página -->
     <section class="page-denuncia">
       <p>Utilize o formulário abaixo para enviar sua denúncia! Iremos enviá-la as autoridades competentes o mais rápido possível!</p>
-      <div>
+      
         <form>
-          <input type="text" placeholder="Título da Denúncia." /><br />
-          <input type="text" placeholder="Escreva a mensagem aqui." /><br />
-          <input type="button" value="Enviar foto" /><br />
-          <input type="button" value="Confirmar localização" /><br />
-          <input type="button" value="Denunciar" />
-          <img src="./img/imagem_mapa.jpg" alt="imagem-maps">
+          <label for="denuncia">
+            <span>Denuncia de buraco na minha rua</span>
+            <textarea id="denuncia" placeholder="Digite sua denúncia aqui!"></textarea>
+          </label>
+          <div class="commands">
+            <div class="buttons">
+              <button type="button"><img src="../img/icon-foto.svg" alt=""> enviar foto</button>
+              <button type="button"><img src="../img/icon-localizacao.svg" alt="">  confirmar localização</button>
+            </div>
+            <div class="map"></div>
+            <!-- <img class="map" src="../img/map-placeholder.jpg" alt="imagem-maps"> -->
+
+          </div>
+          <button class="extended" type="button"><img src="../img/icon-denuncia.svg" alt=""> Denunciar</button>
         </form>
-      </div>
+      
     </section>
   </main>
   <!-- Rodapé -->
