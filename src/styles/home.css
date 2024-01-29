@@ -68,12 +68,6 @@ section a.cta-denuncia h1.cta-text::after {
   }
 }
 @media screen and (max-width: 767px) {
-  header a {
-    margin: 0 0 0 20px
-  }
-  header nav {
-    margin: 0 20px 0 0
-  }
   section a.cta-denuncia {
     width: 440px;
   }

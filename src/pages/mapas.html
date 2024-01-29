@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mapas >>> Buraqueira | Faça sua denúncia e ajude sua cidade!</title>
   <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="../styles/mapas.css">
 </head>
 
 <body>
@@ -15,6 +16,11 @@
       <img src="../img/logo.svg" alt="Logo da página" />
     </a>
     <nav>
+      <input type="checkbox" id="checkbox" class="checkbox">
+      <label for="checkbox" class="label-menu">
+        Menu
+        <span class="hamburger"></span>
+      </label>
       <ul>
         <li><a href="../index.html">Home</a></li>
         <li><a href="../pages/sobre.html">Sobre</a></li>
@@ -27,7 +33,7 @@
   <!-- CTA Faça Sua Denúncia -->
   <div class="subheader">
     <div class="contain">
-      <button disabled="disabled" class="active">
+      <button class="">
         <a href="../pages/denuncia.html">Faça sua denúncia</a>
       </button>
     </div>
@@ -40,15 +46,21 @@
     </div>
     <!-- Conteúdo principal da página -->
     <section class="page-mapas">
-      <p>Nessa página você poderá consultar de uma maneira prática quando a visão geral da sua região e os problemas já
-        apontados.</p>
-      <button>
-        <img src="../img/icon-pesquisa.svg" alt="">
-        <input type="text" placeholder="pesquise aqui">
-      </button>
-      <div>
-        <img src="../img/placeholder-mapa.png" alt="" srcset="">
+      <div class="pre-content">
+        <p>Nessa página você poderá consultar de uma maneira prática quando a visão geral da sua região e os problemas já
+          apontados.</p>
       </div>
+      <section class="page-mapas">
+        <div class="search-map">
+          <button class="btn-search-map">
+            <img src="../img/icon-pesquisa.svg" alt="">
+            <input type="text" placeholder="pesquise aqui">
+          </button>
+        </div>
+          <div class="iframe-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14629.809232599466!2d-46.95136995000001!3d-23.55219345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1706490855192!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+      </section>
     </section>
   </main>
   <!-- Rodapé -->

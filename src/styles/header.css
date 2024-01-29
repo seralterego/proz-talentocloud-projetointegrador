@@ -22,12 +22,7 @@ header nav ul {
   /* padding-right: 24px; */
 }
 
-/* menu responsivo - input (sem js) */
-/* header nav input.checkbox, header nav .label-menu {
-  display: none;
-} */
-/* menu responsivo - btn (sem [utilizando esse] e com js) */
-header nav .btn-menu, header nav .btn-menu {
+header nav input.checkbox, header nav .label-menu {
   display: none;
 }
 
@@ -53,6 +48,7 @@ header nav ul li a {
   color: #404040;
   text-transform: lowercase;
 }
+
 
 @media screen and (max-width: 1024px) {
   header{
@@ -121,72 +117,6 @@ header nav ul li a {
     margin-top: -3px;
   }
   header nav .checkbox:checked ~ .label-menu .hamburger::after {
-    transform: rotate(-135deg);
-    margin-top: -1px;
-  }
-
-
-  /* menu responsivo - btn (sem js) */
-  header nav .btn-menu {
-    background: none;
-    border: none;
-    font: inherit;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    color: var(--bg-color);
-    padding-left: 1rem;
-    cursor: pointer;
-    width: auto;
-  }
-  header nav .btn-menu .hamburger {
-    border-top: 2px solid;
-    width: 25px;
-    margin-top: 5px;
-  }
-  header nav .btn-menu .hamburger::before, header nav .btn-menu .hamburger::after {
-    content: "";
-    display: block;
-    width: 25px;
-    height: 2px;
-    background: currentColor;
-    margin-top: 5px;
-    position: relative;
-    transition: 0.3s;
-  }
-  /* header nav:focus-within ul {
-    height: calc(100vh - 4.6rem);
-    visibility: visible;
-    overflow-y: auto;
-  }
-  header nav:focus-within .hamburger {
-    border-top-color: transparent;
-    top: 5px
-  }
-  header nav:focus-within .hamburger::before {
-    transform: rotate(135deg);
-    margin-top: -3px;
-  }
-  header nav:focus-within .hamburger::after {
-    transform: rotate(-135deg);
-    margin-top: -1px;
-  } */
-
-  /* menu responsivo - btn (com js) */
-  header nav.active ul {
-    height: calc(100vh - 4.6rem);
-    visibility: visible;
-    overflow-y: auto;
-  }
-  header nav.active .hamburger {
-    border-top-color: transparent;
-    top: 5px
-  }
-  header nav.active .hamburger::before {
-    transform: rotate(135deg);
-    margin-top: -3px;
-  }
-  header nav.active .hamburger::after {
     transform: rotate(-135deg);
     margin-top: -1px;
   }
