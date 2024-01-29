@@ -1,0 +1,71 @@
+section.page-mapas {
+  max-width: 997px;
+  margin: 0 auto;
+  height: auto;
+}
+
+section.page-mapas .pre-content {
+  margin-bottom: 4rem;
+}
+section.page-mapas .pre-content p {
+  font-size: 16px;
+}
+section.page-mapas .pre-content p strong {
+  font-size: 10px;
+}
+
+section.page-mapas .search-map {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 auto 2rem;
+}
+section.page-mapas .search-map .btn-search-map {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 367px;
+  height: 64px;
+  padding: 18px 10px;
+  background-color: #F7F7F7;
+  border: 2px solid var(--btn-bg-color);
+}
+section.page-mapas .search-map .btn-search-map > input[type="text"] {
+  border: none;
+  background: none;
+  height: 35px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 0 0 10px;
+  font-size: 0.9rem;
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(28,28,28,0.5);
+  text-align: right;
+}
+section.page-mapas .search-map .btn-search-map > input[type="text"]:focus {
+  outline: none;
+}
+
+section.page-mapas .iframe-map{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto 5rem;
+}
+section.page-mapas .iframe-map iframe {
+  width: 100%;
+  min-height: 620px;
+}
+
+@media screen and (max-width: 1020px) {
+  section.page-mapas {
+    margin: 0 40px;
+  }
+}
+@media screen and (max-width: 690px) {
+  section.page-mapas {
+    margin: 0 20px;
+  }
+}

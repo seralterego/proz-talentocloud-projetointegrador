@@ -1,91 +1,246 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mural >>> Buraqueira | Faça sua denúncia e ajude sua cidade!</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mural >>> Buraqueira | Faça sua denúncia e ajude sua cidade!</title>
+  <link rel="stylesheet" href="../main.css">
 </head>
 
 <body>
-    <header>
-        <a href="../index.html">
-            <img src="../img/logo.svg" alt="Logo da página" />
-        </a>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../pages/sobre.html">Sobre</a></li>
-                <li><a href="../pages/mural.html">Mural</a></li>
-                <li><a href="../pages/mapas.html">Mapas</a></li>
-                <li><a href="../pages/links.html">Links</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div>
-        <button>
-            <a href="">Faça sua denúncia</a>
-        </button>
+  <!-- Menu Principal -->
+  <header>
+    <a href="../index.html">
+      <img src="../img/logo.svg" alt="Logo da página" />
+    </a>
+    <nav>
+      <input type="checkbox" id="checkbox" class="checkbox">
+      <label for="checkbox" class="label-menu">
+        Menu
+        <span class="hamburger"></span>
+      </label>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../pages/sobre.html">Sobre</a></li>
+        <li class="active"><a href="#">Mural</a></li>
+        <li><a href="../pages/mapas.html">Mapas</a></li>
+        <li><a href="../pages/links.html">Links</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- CTA Faça Sua Denúncia -->
+  <div class="subheader">
+    <div class="contain">
+      <button>
+        <a href="../pages/denuncia.html">Faça sua denúncia</a>
+      </button>
     </div>
-    <main>
-        <div>
-            <img src="../img/bg-titulo-pagina.png" alt="Fundo do título da página Mapas">
-            <h1>MURAL</h1>
+  </div>
+  <!-- Conteúdo principal -->
+  <main>
+    <!-- Título de páginas -->
+    <div class="page-title">
+      <h1>Mural</h1>
+    </div>
+    <!-- Conteúdo principal da página -->
+    <section class="page-mural">
+      <div class="pre-content">
+        <p>Aqui apresentamos as reclamações de acordo com a status, tempo de publicação e relevância.</p>
+      </div>
+      <div class="search-mural">
+        <button class="btn-search-mural">
+          <img src="../img/icon-pesquisa.svg" alt="">
+          <input type="text" placeholder="pesquise aqui">
+        </button>
+      </div>
+      <div id="mural-scrool">
+        <div class="mural-content">
+          <!-- Item de conteúdo do mural -->
+          <div class="mural-content-item">
+            <!-- Imagem do item de mural -->
+            <div class="mural-img">
+              <img src="../img/img-mural-placeholder.png" alt="">
+            </div>
+            <!-- Conteúdo do item de mural -->
+            <div class="mural-txt-content">
+              <div class="mural-txt-title">
+                <h3>Denuncia de buraco na minha rua</h3>
+              </div>
+              <div class="mural-txt-icons">
+                <div class="mural-icon-status">
+                  <img src="../img/icon-status-on-going.png" alt="Ícone de status da denúncia">
+                  <p class="mural-item-description">Em andamento</p>
+                </div>
+                <div class="mural-icon-date">
+                  <img src="../img/icon-calendar.png" alt="Ícone de data do tempo de abertura da denúncia">
+                  <p class="mural-item-description">102 Dias</p>
+                </div>
+              </div>
+              <div class="mural-txt-description">
+                <p>Lorem ipsum dolor sit amet consectetur. Ornare imperdiet rutrum fames eget arcu convallis phasellus diam rutrum. Euismod cursus ut malesuada nunc libero nunc mauris nulla sed. Hendrerit lobortis magna enim purus consequat pulvinar non. Enim arcu amet luctus commodo.</p>
+              </div>
+            </div>
+          </div>
+          <div class="mural-content-reactions">
+            <div class="mural-react-commentary">
+              <img src="../img/icon-comment.png" alt="Ícone de comentários na denúncia">
+              <p class="commentary-count">101</p>
+            </div>
+            <div class="mural-react-vote-up">
+              <img src="../img/icon-up.png" alt="Ícone de votos positivos">
+              <p class="commentary-count">101</p>
+            </div>
+            <div class="mural-react-vote-down">
+              <img src="../img/icon-down.png" alt="Ícone de votos negativos">
+              <p class="commentary-count">101</p>
+            </div>
+          </div>
         </div>
-        <h1>Últimas Denúncias!</h1>
-        <ul>
-            <li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in,
-                diam. Sed arcu. Cras consequat.</li>
-            <li>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.
-                Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</li>
-            <li>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique
-                cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</li>
-            <li>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate,
-                nunc.</li>
-        </ul>
-    </main>
-    <footer>
-        <!-- OBS: ícones brancos...mudar o bg do footer no Inspector no navegador para preto para apresentar -->
+        <div class="mural-content">
+          <!-- Item de conteúdo do mural -->
+          <div class="mural-content-item">
+            <!-- Imagem do item de mural -->
+            <div class="mural-img">
+              <img src="../img/img-mural-placeholder.png" alt="">
+            </div>
+            <!-- Conteúdo do item de mural -->
+            <div class="mural-txt-content">
+              <div class="mural-txt-title">
+                <h3>Denuncia de buraco na minha rua</h3>
+              </div>
+              <div class="mural-txt-icons">
+                <div class="mural-icon-status">
+                  <img src="../img/icon-status-on-going.png" alt="Ícone de status da denúncia">
+                  <p class="mural-item-description">Em andamento</p>
+                </div>
+                <div class="mural-icon-date">
+                  <img src="../img/icon-calendar.png" alt="Ícone de data do tempo de abertura da denúncia">
+                  <p class="mural-item-description">102 Dias</p>
+                </div>
+              </div>
+              <div class="mural-txt-description">
+                <p>Lorem ipsum dolor sit amet consectetur. Ornare imperdiet rutrum fames eget arcu convallis phasellus diam rutrum. Euismod cursus ut malesuada nunc libero nunc mauris nulla sed. Hendrerit lobortis magna enim purus consequat pulvinar non. Enim arcu amet luctus commodo.</p>
+              </div>
+            </div>
+          </div>
+          <div class="mural-content-reactions">
+            <div class="mural-react-commentary">
+              <img src="../img/icon-comment.png" alt="Ícone de comentários na denúncia">
+              <p class="commentary-count">101</p>
+            </div>
+            <div class="mural-react-vote-up">
+              <img src="../img/icon-up.png" alt="Ícone de votos positivos">
+              <p class="commentary-count">101</p>
+            </div>
+            <div class="mural-react-vote-down">
+              <img src="../img/icon-down.png" alt="Ícone de votos negativos">
+              <p class="commentary-count">101</p>
+            </div>
+          </div>
+        </div>
+        <div class="mural-content">
+          <!-- Item de conteúdo do mural -->
+          <div class="mural-content-item">
+            <!-- Imagem do item de mural -->
+            <div class="mural-img">
+              <img src="../img/img-mural-placeholder.png" alt="">
+            </div>
+            <!-- Conteúdo do item de mural -->
+            <div class="mural-txt-content">
+              <div class="mural-txt-title">
+                <h3>Denuncia de buraco na minha rua</h3>
+              </div>
+              <div class="mural-txt-icons">
+                <div class="mural-icon-status">
+                  <img src="../img/icon-status-on-going.png" alt="Ícone de status da denúncia">
+                  <p class="mural-item-description">Em andamento</p>
+                </div>
+                <div class="mural-icon-date">
+                  <img src="../img/icon-calendar.png" alt="Ícone de data do tempo de abertura da denúncia">
+                  <p class="mural-item-description">102 Dias</p>
+                </div>
+              </div>
+              <div class="mural-txt-description">
+                <p>Lorem ipsum dolor sit amet consectetur. Ornare imperdiet rutrum fames eget arcu convallis phasellus diam rutrum. Euismod cursus ut malesuada nunc libero nunc mauris nulla sed. Hendrerit lobortis magna enim purus consequat pulvinar non. Enim arcu amet luctus commodo.</p>
+              </div>
+            </div>
+          </div>
+          <div class="mural-content-reactions">
+            <div class="mural-react-commentary">
+              <img src="../img/icon-comment.png" alt="Ícone de comentários na denúncia">
+              <p class="commentary-count">101</p>
+            </div>
+            <div class="mural-react-vote-up">
+              <img src="../img/icon-up.png" alt="Ícone de votos positivos">
+              <p class="commentary-count">101</p>
+            </div>
+            <div class="mural-react-vote-down">
+              <img src="../img/icon-down.png" alt="Ícone de votos negativos">
+              <p class="commentary-count">101</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Rodapé -->
+	<footer>
+    <div class="page-credits">
+      <div class="page-credits-01">
+        <!-- Logo branco -->
         <img src="../img/logo-rodape.svg" alt="Logo da página na cor branca">
+        <!-- Rede sociais -->
         <ul>
-            <li>
-                <a href="https://www.instagram.com/buraqueira" target="_blank">
-                    <img src="../img/icon-instagram.svg" alt="Logo do Instagram" />
-                </a>
-            </li>
-            <li>
-                <a href="https://api.whatsapp.com/send?phone=5511000000000&text=Quero%20fazer%20uma%20denúncia%20hoje!"
-                    target="_blank">
-                    <img src="../img/icon-whatsapp.svg" alt="Logo do WhatsApp" />
-                </a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com/buraqueira" target="_blank">
-                    <img src="../img/icon-facebook.svg" alt="Logo do Facebook" />
-                </a>
-            </li>
-            <li>
-                <a href="https://twitter.com/buraqueira">
-                    <img src="../img/icon-twitter.svg" alt="Logo do Twiter" />
-                </a>
-            </li>
+          <li>
+            <a href="https://www.instagram.com/buraqueira" target="_blank">
+              <img src="../img/icon-instagram.svg" alt="Logo do Instagram" />
+            </a>
+          </li>
+          <li>
+            <a href="https://api.whatsapp.com/send?phone=5511000000000&text=Quero%20fazer%20uma%20denúncia%20hoje!"
+              target="_blank">
+              <img src="../img/icon-whatsapp.svg" alt="Logo do WhatsApp" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/buraqueira" target="_blank">
+              <img src="../img/icon-facebook.svg" alt="Logo do Facebook" />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/buraqueira">
+              <img src="../img/icon-twitter.svg" alt="Logo do Twiter" />
+            </a>
+          </li>
         </ul>
-        <h2>saiba mais</h2>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../pages/sobre.html">Sobre</a></li>
-            <li><a href="../pages/mural.html">Mural</a></li>
-            <li><a href="../pages/mapas.html">Mapas</a></li>
-            <li><a href="../pages/links.html">Links</a></li>
-        </ul>
-        <h3>conecte-se conosco</h3>
-        <ul>
+      </div>
+      <!-- Submenu e equipe -->
+      <div class="page-credits-02">
+        <div class="page-credits-submenu">
+          <h3>saiba mais</h3>
+          <!-- Submenu -->
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/sobre.html">Sobre</a></li>
+            <li><a href="pages/mural.html">Mural</a></li>
+            <li><a href="pages/mapas.html">Mapas</a></li>
+            <li><a href="pages/links.html">Links</a></li>
+          </ul>
+        </div>
+        <div class="page-credits-team">
+          <!-- Equipe -->
+          <h3>conecte-se conosco</h3>
+          <ul>
             <li><a href="https://github.com/ananias18" target="_blank">Ananias José</a></li>
             <li><a href="https://github.com/dmax101" target="_blank">Danilo Ribeiro</a></li>
             <li><a href="https://github.com/reneerocha" target="_blank">Renêe Rocha</a></li>
             <li><a href="https://github.com/joaovictorruivo" target="_blank">João Oliveira</a></li>
             <li><a href="https://github.com/seralterego" target="_blank">Sérgio Leitão</a></li>
-        </ul>
-    </footer>
+          </ul>
+        </div>
+      </div>
+    </div>
+	</footer>
 </body>
 
 </html>

@@ -1,0 +1,190 @@
+section.page-mural {
+  max-width: 997px;
+  margin: 0 auto;
+  height: auto;
+}
+
+section.page-mural .pre-content {
+  margin-bottom: 4rem;
+}
+section.page-mural .pre-content p {
+  font-size: 16px;
+}
+section.page-mural .pre-content p strong {
+  font-size: 10px;
+}
+
+section.page-mural .search-mural {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 auto 2rem;
+}
+section.page-mural .search-mural .btn-search-mural {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 367px;
+  height: 64px;
+  padding: 18px 10px;
+  background-color: #F7F7F7;
+  border: 2px solid var(--btn-bg-color);
+}
+section.page-mural .search-mural .btn-search-mural > input[type="text"] {
+  border: none;
+  background: none;
+  height: 35px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 0 0 10px;
+  font-size: 0.9rem;
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(28,28,28,0.5);
+  text-align: right;
+}
+section.page-mural .search-mural .btn-search-mural > input[type="text"]:focus {
+  outline: none;
+}
+
+section.page-mural #mural-scrool {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 10px;
+  max-height: 500px;
+
+}
+
+section.page-mural .mural-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto 5rem;
+  flex-flow: column wrap;
+}
+section.page-mural .mural-content-item {
+  border: 4px solid var(--secondary-bg-color);
+  border-radius: 8px;
+  padding: 18px 16px;
+  width: 100%;
+  display: flex;
+  gap: 60px;
+}
+section.page-mural .mural-content-item .mural-img {
+  width: 168px;
+  height: 168px;
+}
+section.page-mural .mural-content-item .mural-txt-content {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-height: 180px;
+  max-width: 720px;
+  overflow: hidden;
+  gap: 15px;
+}
+
+section.page-mural .mural-content-item .mural-txt-content .mural-txt-title h3 {
+  font-size: 30px;
+  color: var(--secondary-txt-color);
+  border-bottom: 4px solid var(--secondary-txt-color);
+}
+
+section.page-mural .mural-content-item .mural-txt-content .mural-txt-icons {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-width: 420px; /* alterar se necessário */
+  gap: 10px;
+}
+
+section.page-mural .mural-content-item .mural-txt-content .mural-txt-icons .mural-icon-status, section.page-mural .mural-content-item .mural-txt-content .mural-txt-icons .mural-icon-date {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+section.page-mural .mural-content-item .mural-txt-content .mural-txt-icons .mural-icon-status .mural-item-description {
+  font-weight: 600;
+}
+section.page-mural .mural-content-item .mural-txt-content .mural-txt-description {
+  width: auto;
+  height: 65px;
+}
+section.page-mural .mural-content-item .mural-txt-content .mural-txt-description p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+section.page-mural .mural-content .mural-content-reactions {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 25px;
+  width: 100%;
+  margin-top: 1rem;
+}
+section.page-mural .mural-content .mural-content-reactions .mural-react-commentary {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: auto;
+}
+section.page-mural .mural-content .mural-content-reactions .mural-react-vote-up {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: auto;
+}
+section.page-mural .mural-content .mural-content-reactions .mural-react-vote-down {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: auto;
+}
+
+section.page-mural .mural-content .mural-content-reactions .commentary-count {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1020px) {
+  section.page-mural {
+    margin: 0 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  section.page-mural {
+    margin: 0 20px;
+    width: 90%;
+  }
+  section.page-mural .mural-content {
+    margin: 0;
+    width: 100%;
+  }
+  section.page-mural .mural-content-item .mural-txt-content .mural-txt-description {
+    display: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  section.page-mural #mural-scrool {
+    padding: 20px;
+  }
+  section.page-mural .mural-content {
+    margin: 0 0 2rem;
+    width: 100%;
+  }
+  section.page-mural .mural-content-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: start;
+  }
+  section.page-mural .mural-content-item .mural-img {
+    margin: 0 auto -3rem;
+  }
+}
