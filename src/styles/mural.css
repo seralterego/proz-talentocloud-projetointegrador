@@ -52,7 +52,6 @@ section.page-mural #mural-scrool {
   overflow-x: hidden;
   padding: 10px;
   max-height: 500px;
-
 }
 
 section.page-mural .mural-content {
@@ -170,21 +169,21 @@ section.page-mural .mural-content .mural-content-reactions .commentary-count {
     display: none;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 767px) {
   section.page-mural #mural-scrool {
     padding: 20px;
   }
-  section.page-mural .mural-content {
+  section.page-mural #mural-scrool .mural-content {
     margin: 0 0 2rem;
     width: 100%;
   }
-  section.page-mural .mural-content-item {
+  section.page-mural #mural-scrool .mural-content-item {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
     align-content: start;
   }
-  section.page-mural .mural-content-item .mural-img {
+  section.page-mural #mural-scrool .mural-content-item .mural-img {
     margin: 0 auto -3rem;
   }
 }
