@@ -42,7 +42,7 @@ section a.cta-denuncia h1.cta-text {
   align-items: center;
   gap: 8px;
   justify-content: space-between;
-  font-size: 44px;
+  font-size: 45px;
   width: 234px;
   height: 109px;
   text-align: left;
@@ -50,6 +50,7 @@ section a.cta-denuncia h1.cta-text {
   line-height: 1.2;
   position: relative;
   left: -10%;
+  top: 5%
 }
 section a.cta-denuncia h1.cta-text::after {
   content: "!";
@@ -59,4 +60,21 @@ section a.cta-denuncia h1.cta-text::after {
   font-style: normal;
   font-weight: 800;
   line-height: normal;
+}
+
+@media screen and (min-width: 1220px) {
+  section.hero {
+    height: 90vh;
+  }
+}
+@media screen and (max-width: 767px) {
+  header a {
+    margin: 0 0 0 20px
+  }
+  header nav {
+    margin: 0 20px 0 0
+  }
+  section a.cta-denuncia {
+    width: 440px;
+  }
 }
