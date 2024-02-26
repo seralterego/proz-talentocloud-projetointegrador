@@ -123,3 +123,10 @@ button:hover > img,
   padding: 10px 20px;
   cursor: pointer;
 }
+
+#nameFoto {
+  display: none;
+  font-size: x-small;
+  width: 100%;
+  border: none;
+}
