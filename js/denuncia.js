@@ -101,7 +101,7 @@ function submit(event) {
     if (dominioProd != 'seralterego.github.io') {
       window.location.href = '/pages/mural.html';
     } else {
-      window.location.href = `${dominioProd}/proz-talentocloud-projetointegrador/pages/mural.html`;
+      window.location.href = `/proz-talentocloud-projetointegrador/pages/mural.html`;
     }
 
   } else {
