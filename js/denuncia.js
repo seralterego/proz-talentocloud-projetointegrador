@@ -96,8 +96,13 @@ function submit(event) {
 
     alert("Denúncia enviada com sucesso!");
 
-    window.location.href = '/src';
-
+    const dominioProd = window.location.hostname
+    console.log(dominioProd);
+    if (dominioProd === '') {
+      window.location.href = `${dominioProd}/proz-talentocloud-projetointegrador/pages/mural.html`;
+    } else {
+      window.location.href = '/pages/mural.html';
+    }
 
   } else {
     alert("O formulário possui alguns erros");
