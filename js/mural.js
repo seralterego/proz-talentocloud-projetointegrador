@@ -138,7 +138,7 @@ for (let i = 0; i < lista.length; i++) {
     (new Date().getTime() - new Date(lista[i].data_denuncia).getTime()) /
       (1000 * 3600 * 24)
   );
-  let comentarios = `${lista[i].comentarios.join("<br> 👤")}`;
+  let comentarios = `${lista[i].comentarios.join("<br> 🗣️")}`;
   const n_comentarios = lista[i].comentarios.length
   const prioridade = lista[i].prioridade;
 
@@ -171,7 +171,7 @@ for (let i = 0; i < lista.length; i++) {
         </div>
         </div>
         <div class="mural-content-reactions">
-        <div class="mural-react-commentary">
+        <div class="mural-react-commentary" id="commentaries">
         <img src="../img/icon-comment.png" alt="Ícone de comentários na denúncia">
         <p class="commentary-count">${n_comentarios}</p>
         <div class="mural-txt-description-mod">
@@ -186,4 +186,5 @@ for (let i = 0; i < lista.length; i++) {
   </div>
 `;
   mural.appendChild(teste);
-}
+};
+

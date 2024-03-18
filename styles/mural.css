@@ -190,7 +190,7 @@ section.page-mural .mural-content .mural-content-reactions .commentary-count {
 }
 
 .mural-txt-description-mod {
-  display: flex;
+  display: none;
   flex-direction: column;
   padding: 4px;
 }
