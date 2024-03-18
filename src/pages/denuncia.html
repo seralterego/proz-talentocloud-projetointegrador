@@ -1,127 +1,171 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Denúncia >>> Buraqueira | Faça sua denúncia e ajude sua cidade!</title>
-  <link rel="stylesheet" href="../main.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Denúncia >>> Buraqueira | Faça sua denúncia e ajude sua cidade!
+    </title>
+    <link rel="stylesheet" href="../main.css" />
+    <script src="../js/denuncia.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  </head>
 
-<body>
-  <!-- Menu Principal -->
-  <header>
-    <a href="../index.html">
-      <img src="../img/logo.svg" alt="Logo da página" />
-    </a>
-    <nav>
-      <input type="checkbox" id="checkbox" class="checkbox">
-      <label for="checkbox" class="label-menu">
-        <span class="hamburger"></span>
-      </label>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../pages/sobre.html">Sobre</a></li>
-        <li class="active"><a href="#">Mural</a></li>
-        <li><a href="../pages/mapas.html">Mapas</a></li>
-        <li><a href="../pages/links.html">Links</a></li>
-      </ul>
-    </nav>
-  </header>
-  <!-- CTA Faça Sua Denúncia -->
-  <!-- <div class="subheader">
-    <div class="contain">
-      <button disabled="disabled" class="active">
-        <a href="">Faça sua denúncia</a>
-      </button>
-    </div>
-  </div> -->
-  <!-- Conteúdo principal -->
-  <main>
-    <!-- Título de páginas -->
-    <div class="page-title">
-      <h1>Denuncie</h1>
-    </div>
-    <!-- Conteúdo principal da página -->
-    <section class="page-denuncia">
-      <p>Utilize o formulário abaixo para enviar sua denúncia! Iremos enviá-la as autoridades competentes o mais rápido possível!</p>
-      
-        <form>
-          <label class="label-denucia" for="denuncia">
+  <body>
+    <!-- Menu Principal -->
+    <header>
+      <a href="../index.html">
+        <img src="../img/logo.svg" alt="Logo da página" />
+      </a>
+      <nav>
+        <input type="checkbox" id="checkbox" class="checkbox" />
+        <label for="checkbox" class="label-menu">
+          Menu
+          <span class="hamburger"></span>
+        </label>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../pages/sobre.html">Sobre</a></li>
+          <li class="active"><a href="#">Mural</a></li>
+          <!-- <li><a href="../pages/mapas.html">Mapas</a></li> -->
+          <!-- <li><a href="../pages/links.html">Links</a></li> -->
+        </ul>
+      </nav>
+    </header>
+    <!-- CTA Faça Sua Denúncia (não necessário)-->
+    
+    <!-- Conteúdo principal -->
+    <main>
+      <!-- Título de páginas -->
+      <div class="page-title">
+        <h1>Denuncie</h1>
+      </div>
+      <!-- Conteúdo principal da página -->
+      <section class="page-denuncia">
+        <p>
+          Utilize o formulário abaixo para enviar sua denúncia! Iremos enviá-la
+          as autoridades competentes o mais rápido possível!
+        </p>
+
+        <form id="formDenuncia" action="/" method="post" enctype="multipart/form-data">
+          <label for="denuncia">
             <span>Denuncia de buraco na minha rua</span>
-            <textarea id="denuncia" placeholder="Digite sua denúncia aqui!"></textarea>
+            <textarea
+              id="denuncia"
+              placeholder="Digite sua denúncia aqui!"
+            ></textarea>
           </label>
           <div class="commands">
             <div class="buttons">
-              <button type="button"><img src="../img/icon-foto.svg" alt=""> enviar foto</button>
-              <button type="button"><img src="../img/icon-localizacao.svg" alt="">  confirmar localização</button>
+              <label for="foto">
+                <button type="button" class="btnfoto">
+                  <img src="../img/icon-foto.svg" alt="" /> enviar foto
+                </button>
+                <span id="nameFoto"></span>
+                <input
+                  type="file"
+                  id="foto"
+                  name="foto"
+                  title="foto"
+                  accept="image/*"
+                  class="inputfile"
+                />
+              </label>
+              <button type="button" class="confirmLocation">
+                <img src="../img/icon-localizacao.svg" onclick="onConfirmLocation" alt="" /> confirmar localização
+              </button>
             </div>
-            <div class="map"></div>
-            <!-- <img class="map" src="../img/map-placeholder.jpg" alt="imagem-maps"> -->
-
+            <div id="map"></div>
           </div>
-          <button class="extended" type="button"><img src="../img/icon-denuncia.svg" alt=""> Denunciar</button>
+          <button class="extended submit" type="submit">
+            <img src="../img/icon-denuncia.svg" alt="" /> Denunciar
+          </button>
         </form>
-      
-    </section>
-  </main>
-  <!-- Rodapé -->
-	<footer>
-    <div class="page-credits">
-      <div class="page-credits-01">
-        <!-- Logo branco -->
-        <img src="../img/logo-rodape.svg" alt="Logo da página na cor branca">
-        <!-- Rede sociais -->
-        <ul>
-          <li>
-            <a href="https://www.instagram.com/buraqueira" target="_blank">
-              <img src="../img/icon-instagram.svg" alt="Logo do Instagram" />
-            </a>
-          </li>
-          <li>
-            <a href="https://api.whatsapp.com/send?phone=5511000000000&text=Quero%20fazer%20uma%20denúncia%20hoje!"
-              target="_blank">
-              <img src="../img/icon-whatsapp.svg" alt="Logo do WhatsApp" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/buraqueira" target="_blank">
-              <img src="../img/icon-facebook.svg" alt="Logo do Facebook" />
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/buraqueira">
-              <img src="../img/icon-twitter.svg" alt="Logo do Twiter" />
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- Submenu e equipe -->
-      <div class="page-credits-02">
-        <div class="page-credits-submenu">
-          <h3>saiba mais</h3>
-          <!-- Submenu -->
+      </section>
+    </main>
+    <!-- Rodapé -->
+    <footer>
+      <div class="page-credits">
+        <div class="page-credits-01">
+          <!-- Logo branco -->
+          <img
+            src="../img/logo-rodape.svg"
+            alt="Logo da página na cor branca"
+          />
+          <!-- Rede sociais -->
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pages/sobre.html">Sobre</a></li>
-            <li><a href="pages/mural.html">Mural</a></li>
-            <li><a href="pages/mapas.html">Mapas</a></li>
-            <li><a href="pages/links.html">Links</a></li>
+            <li>
+              <a href="https://www.instagram.com/buraqueira" target="_blank">
+                <img src="../img/icon-instagram.svg" alt="Logo do Instagram" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://api.whatsapp.com/send?phone=5511000000000&text=Quero%20fazer%20uma%20denúncia%20hoje!"
+                target="_blank"
+              >
+                <img src="../img/icon-whatsapp.svg" alt="Logo do WhatsApp" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/buraqueira" target="_blank">
+                <img src="../img/icon-facebook.svg" alt="Logo do Facebook" />
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/buraqueira">
+                <img src="../img/icon-twitter.svg" alt="Logo do Twiter" />
+              </a>
+            </li>
           </ul>
         </div>
-        <div class="page-credits-team">
-          <!-- Equipe -->
-          <h3>conecte-se conosco</h3>
-          <ul>
-            <li><a href="https://github.com/ananias18" target="_blank">Ananias José</a></li>
-            <li><a href="https://github.com/dmax101" target="_blank">Danilo Ribeiro</a></li>
-            <li><a href="https://github.com/reneerocha" target="_blank">Renêe Rocha</a></li>
-            <li><a href="https://github.com/joaovictorruivo" target="_blank">João Oliveira</a></li>
-            <li><a href="https://github.com/seralterego" target="_blank">Sérgio Leitão</a></li>
-          </ul>
+        <!-- Submenu e equipe -->
+        <div class="page-credits-02">
+          <div class="page-credits-submenu">
+            <h3>saiba mais</h3>
+            <!-- Submenu -->
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="pages/sobre.html">Sobre</a></li>
+              <li><a href="pages/mural.html">Mural</a></li>
+              <li><a href="pages/mapas.html">Mapas</a></li>
+              <li><a href="pages/links.html">Links</a></li>
+            </ul>
+          </div>
+          <div class="page-credits-team">
+            <!-- Equipe -->
+            <h3>conecte-se conosco</h3>
+            <ul>
+              <li>
+                <a href="https://github.com/ananias18" target="_blank"
+                  >Ananias José</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/dmax101" target="_blank"
+                  >Danilo Ribeiro</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/reneerocha" target="_blank"
+                  >Renêe Rocha</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/joaovictorruivo" target="_blank"
+                  >João Oliveira</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/seralterego" target="_blank"
+                  >Sérgio Leitão</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-	</footer>
-</body>
-
+    </footer>
+  </body>
 </html>
