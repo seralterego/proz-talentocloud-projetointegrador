@@ -68,7 +68,7 @@ section.page-mural .mural-content-item {
   padding: 18px 16px;
   width: 100%;
   display: flex;
-  justify-items: flex-end;
+  justify-content: space-evenly;
   gap: 60px;
 }
 section.page-mural .mural-content-item .mural-img {
@@ -190,7 +190,7 @@ section.page-mural .mural-content .mural-content-reactions .commentary-count {
 }
 
 .mural-txt-description-mod {
-  display: flex;
+  display: none;
   flex-direction: column;
   padding: 4px;
 }

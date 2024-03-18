@@ -126,11 +126,9 @@ var lista = [
 function compararPorPrioridade(a, b) {
     return a.prioridade - b.prioridade; // Retorna a diferença invertida entre as prioridades dos objetos
   }
-  
   lista.sort(compararPorPrioridade); // Ordena a lista em ordem decrescente de prioridade
 
 const mural = document.getElementById("mural-scroll");
-
 for (let i = 0; i < lista.length; i++) {
   const titulo = lista[i].titulo;
   const andamento = lista[i].andamento;
@@ -141,12 +139,11 @@ for (let i = 0; i < lista.length; i++) {
   let comentarios = `${lista[i].comentarios.join("<br> 🗣️")}`;
   const n_comentarios = lista[i].comentarios.length
   const prioridade = lista[i].prioridade;
-
   console.log(comentarios);
 
   const teste = document.createElement("div");
   teste.innerHTML = `
-    <div class="mural-content">
+  <div class="mural-content">
     <!-- Item de conteúdo do mural -->
     <div class="mural-content-item">
       <!-- Imagem do item de mural -->
@@ -171,12 +168,12 @@ for (let i = 0; i < lista.length; i++) {
         </div>
         </div>
         <div class="mural-content-reactions">
-        <div class="mural-react-commentary" id="commentaries">
-        <img src="../img/icon-comment.png" alt="Ícone de comentários na denúncia">
-        <p class="commentary-count">${n_comentarios}</p>
-        <div class="mural-txt-description-mod">
-          <p>👤 ${comentarios}</p>
-        </div>
+        <div class="mural-react-commentary" onclick="showCommentaries()">
+          <img src="../img/icon-comment.png" alt="Ícone de comentários na denúncia">
+          <p class="commentary-count">${n_comentarios}</p>
+          <div class="mural-txt-description-mod" id="commentaries">
+            <p>🗣️ ${comentarios}</p>
+          </div>
         </div>
       <div class="mural-react-vote-up">
         <img src="../img/icon-up.png" alt="Ícone de votos positivos">
@@ -188,3 +185,7 @@ for (let i = 0; i < lista.length; i++) {
   mural.appendChild(teste);
 };
 
+function showCommentaries() {
+  console.log('clicado')
+  
+}
