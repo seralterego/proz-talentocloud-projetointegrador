@@ -98,10 +98,10 @@ function submit(event) {
 
     const dominioProd = window.location.hostname
     console.log(dominioProd);
-    if (dominioProd === '') {
-      window.location.href = `${dominioProd}/proz-talentocloud-projetointegrador/pages/mural.html`;
-    } else {
+    if (dominioProd != 'seralterego.github.io') {
       window.location.href = '/pages/mural.html';
+    } else {
+      window.location.href = `${dominioProd}/proz-talentocloud-projetointegrador/pages/mural.html`;
     }
 
   } else {
