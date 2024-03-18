@@ -22,14 +22,14 @@
 
 .imagem-sobre {
   text-align: right;
-
 }
+
 
 .imagem-sobre-ultima {
   text-align: center;
   margin-top: 100px;
-
 }
+
 
 main {
   padding-bottom: 100px;
@@ -63,6 +63,14 @@ main {
     max-width: 100%;
     margin: 0 auto;
   }
+  .imagem-sobre img {
+    width: 100%;
+    margin: 25px auto 0;
+  }
+  .imagem-sobre-ultima img {
+    width: 100%;
+  }
+  
 }
 
 /* Mobile começa aqui*/

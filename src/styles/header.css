@@ -91,7 +91,7 @@ header nav ul li a {
   header nav .label-menu .hamburger {
     border-top: 2px solid;
     width: 25px;
-    margin-top: 5px;
+    margin-top: 0;
   }
   header nav .label-menu .hamburger::before, header nav .label-menu .hamburger::after {
     content: "";
